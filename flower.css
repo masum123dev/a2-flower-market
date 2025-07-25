@@ -36,11 +36,13 @@ img {
 
 .banner-section {
   display: flex;
-  justify-content: space-between;
   margin: 30px 200px 0px 200px;
   margin-top: 58px;
+  justify-content: space-between;
 }
+
 .banner-title {
+  justify-content: center;
   margin-top: 95px;
 }
 
@@ -53,27 +55,38 @@ img {
 }
 
 /* this is Our Plant Secion */
-.plant-title {
-  justify-items: center;
+.our-plant-section {
+  margin: 10px 230px;
 }
-.plant-headline {
+
+.our-plant {
   justify-content: center;
+  text-align: center;
+  line-height: 15px;
 }
 .plant-card {
   width: 230px;
   height: 550px;
-  margin: 5px;
+  margin: 0px;
+  line-height: 3px;
+}
+.plant-card,
+.h5,
+.h4 {
+  text-align: center;
 }
 .card-rows {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
 }
 
 .plant-card button {
-  background-color: hsl(22, 91%, 55%);
+  background-color: hsl(22, 98%, 52%);
+  border-radius: ;
   height: 35px;
   width: 100%;
-  color: aliceblue;
+  color: rgb(250, 252, 253);
 }
 .col-one img {
   border: 2px solid rgb(250, 243, 243);
@@ -84,9 +97,36 @@ img {
   border-radius: 20px;
 }
 
-/* this is our deal section */
+/* this is plants lover section */
+.plants-lover-section {
+  display: flex;
+  margin: 0px 230px;
+  gap: 150px;
+}
+
+.plant-image {
+  height: 460px;
+  width: 530px;
+}
+
+.plant-title {
+  font-size: 35px;
+  width: 100%;
+  color: black;
+}
+
+.plant-description {
+  font-size: 25px;
+  color: gray;
+  height: 100%;
+  width: 100%;
+  margin-top: -25px;
+}
+
+/* this is latest deal section */
 .latest-deal-section {
-  margin-bottom: 35px;
+  margin: 0px 200px;
+  text-align: center;
 }
 .deal-title {
   justify-content: center;
@@ -100,25 +140,6 @@ img {
   justify-content: center;
 }
 
-/* this is plants lover section */
-.plants-lover-section {
-  display: flex;
-  gap: 45px;
-  align-items: center;
-  margin-bottom: 65px;
-}
-
-.plant-title {
-  font-size: 45px;
-  width: 50%;
-}
-
-.plant-description {
-  font-size: 20px;
-  height: 100%;
-  width: 50%;
-}
-
 /* this is responsive section */
 /* Small Device Responsiveness */
 @media screen and (max-width: 576px) {
@@ -130,16 +151,28 @@ img {
     display: flex;
     flex-direction: column-reverse;
   }
+  .our-plant-section {
+    display: flex;
+    flex-direction: column;
+  }
   .card-rows {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
-  .plants-lover-secion {
+  .plants-lover-section {
     display: flex;
-    float: column;
+    flex-direction: column;
+  }
+
+  /* latest deal secion */
+  .latest-deal-section {
+    display: flex;
+    flex-direction: column;
   }
   .deal-image {
     display: flex;
     flex-direction: column;
+    height: 200px;
+    width: 350px;
   }
 }
