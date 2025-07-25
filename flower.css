@@ -1,12 +1,27 @@
+/* reset and universal code starts here */
 * {
+  box-sizing: border-box;
+  list-style-type: none;
   background-color: rgb(250, 247, 247);
+  margin: 30p 230px;
+  outline: none;
+  text-decoration: none;
 }
+html {
+  scroll-behavior: smooth;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+/* reset and universal code ends here */
 
 .navbar {
   display: flex;
   list-style: none;
   justify-content: space-between;
   align-items: center;
+  margin: 0px 120px;
 }
 
 .logo-section {
@@ -22,7 +37,7 @@
 .banner-section {
   display: flex;
   justify-content: space-between;
-  margin: 30px 220px 0px 220px;
+  margin: 30px 200px 0px 200px;
   margin-top: 58px;
 }
 .banner-title {
@@ -41,6 +56,9 @@
 .plant-title {
   justify-items: center;
 }
+.plant-headline {
+  justify-content: center;
+}
 .plant-card {
   width: 230px;
   height: 550px;
@@ -48,7 +66,7 @@
 }
 .card-rows {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .plant-card button {
@@ -82,19 +100,43 @@
   justify-content: center;
 }
 
+/* this is plants lover section */
+.plants-lover-section {
+  display: flex;
+  gap: 45px;
+  align-items: center;
+  margin-bottom: 65px;
+}
+
+.plant-title {
+  font-size: 45px;
+  width: 50%;
+}
+
+.plant-description {
+  font-size: 20px;
+  height: 100%;
+  width: 50%;
+}
+
 /* this is responsive section */
 /* Small Device Responsiveness */
 @media screen and (max-width: 576px) {
-  .navbar {
-    flex-direction: column;
+  .hide-on-small-device {
+    display: none;
+    justify-content: space-between;
   }
   .banner-section {
     display: flex;
     flex-direction: column-reverse;
   }
   .card-rows {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .plants-lover-secion {
     display: flex;
-    flex-direction: column;
+    float: column;
   }
   .deal-image {
     display: flex;
