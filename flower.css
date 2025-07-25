@@ -127,6 +127,7 @@ img {
 .latest-deal-section {
   margin: 0px 200px;
   text-align: center;
+  margin-bottom: 40px;
 }
 .deal-title {
   justify-content: center;
@@ -138,6 +139,31 @@ img {
 }
 .deal-upper {
   justify-content: center;
+}
+
+/* this is footer section */
+.footer-section {
+  display: flex;
+  margin: 40px 230px;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-logo {
+  height: 50px;
+  width: 100px;
+}
+
+.footer-menu-one {
+  font-size: 18px;
+}
+.footer-menu-two {
+  font-size: 18px;
+}
+
+.social-link img {
+  height: 20px;
+  width: 20px;
+  gap: 45px;
 }
 
 /* this is responsive section */
@@ -174,5 +200,10 @@ img {
     flex-direction: column;
     height: 200px;
     width: 350px;
+    border-radius: 10px;
+  }
+  .footer-section {
+    display: flex;
+    flex-direction: column;
   }
 }
