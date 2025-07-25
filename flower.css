@@ -92,10 +92,6 @@ img {
   border: 2px solid rgb(250, 243, 243);
   border-radius: 10px;
 }
-.col-two {
-  border: 2px solid rgb(250, 230, 230);
-  border-radius: 20px;
-}
 
 /* this is plants lover section */
 .plants-lover-section {
@@ -151,13 +147,16 @@ img {
 .footer-logo {
   height: 50px;
   width: 100px;
+  margin-top: -80px;
 }
 
 .footer-menu-one {
   font-size: 18px;
+  line-height: 40px;
 }
 .footer-menu-two {
   font-size: 18px;
+  line-height: 40px;
 }
 
 .social-link img {
@@ -176,6 +175,11 @@ img {
   .banner-section {
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  .banner-image {
+    min-height: 180px;
+    min-width: 270px;
   }
   .our-plant-section {
     display: flex;
@@ -205,5 +209,9 @@ img {
   .footer-section {
     display: flex;
     flex-direction: column;
+    margin-top: 630px;
+  }
+  .social-link {
+    display: flex;
   }
 }
